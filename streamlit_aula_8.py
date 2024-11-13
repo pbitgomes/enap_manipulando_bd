@@ -17,6 +17,12 @@ st.latex(r''' a+a r^1+a r^2+a r^3 ''')
 resposta = st.slider('Escolha um valor de 0 a 100', 0, 100)
 st.write(resposta)
 
+# questão 4
+data = {'nomeServidor': ['Adriana', 'Mônica', 'Samara'], 'salario': [1200, 300, 5000]}
+df = pd.DataFrame(data)
+st.df(df)
+servidor = st.selectbox('Qual servidor você gostaria de selecionar?',df[nomeServidor])
+st.write('Você selecionou: ', servidor)
 
 st.title('Tipos de campos possíveis')
 
