@@ -21,7 +21,7 @@ st.write(resposta)
 import pandas as pd
 data = {'nomeServidor': ['Adriana', 'Mônica', 'Samara'], 'salario': [1200, 300, 5000]}
 df = pd.DataFrame(data)
-st.df(df)
+st.table(df)
 servidor = st.selectbox('Qual servidor você gostaria de selecionar?',df[nomeServidor])
 st.write('Você selecionou: ', servidor)
 
