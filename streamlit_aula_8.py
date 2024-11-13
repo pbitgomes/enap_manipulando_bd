@@ -18,6 +18,7 @@ resposta = st.slider('Escolha um valor de 0 a 100', 0, 100)
 st.write(resposta)
 
 # questão 4
+import pandas as pd
 data = {'nomeServidor': ['Adriana', 'Mônica', 'Samara'], 'salario': [1200, 300, 5000]}
 df = pd.DataFrame(data)
 st.df(df)
