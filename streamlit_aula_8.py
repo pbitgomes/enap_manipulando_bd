@@ -14,5 +14,5 @@ st.code("x=2021")
 st.latex(r''' a+a r^1+a r^2+a r^3 ''')
 
 # questão 3
-resposta = st.select_slider('Escolha um valor de 0 a 100', 0, 100)
+resposta = st.slider('Escolha um valor de 0 a 100', 0, 100)
 st.write(resposta)
