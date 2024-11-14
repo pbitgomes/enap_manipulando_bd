@@ -28,6 +28,9 @@ st.table(df)
 servidor = st.selectbox('Qual servidor você gostaria de selecionar?',df['nomeServidor'])
 st.write('Você selecionou: ', servidor)
 
+dados_filtrados = df[df['nomeServidor'] == servidor]
+st.write(dados_filtrados)
+
 # st.title('Tipos de campos possíveis')
 
 # criando elementos gráficos
